@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>AspireBuzz </title>
+     <!-- Perfect Scrollbar -->
+      <link type="text/css" href="assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+      <!-- Material Design Icons -->
+      <link type="text/css" href="assets/css/material-icons.css" rel="stylesheet">
+      <!-- Font Awesome Icons -->
+      <link type="text/css" href="assets/css/fontawesome.css" rel="stylesheet">
+      <!-- App CSS -->
+      <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+      
+       <!-- Sweet Alert -->
+    <link rel="stylesheet" href="assets/css/sweetalert.css">
+
+      
+      <!-- Quill Theme -->
+    <link type="text/css" href="assets/css/quill.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/quill.rtl.css" rel="stylesheet">
+    
+    <!-- Flatpickr -->
+    <link type="text/css" href="assets/css/flatpickr.css" rel="stylesheet">
+    
+    <link type="text/css" href="assets/css/flatpickr-airbnb.css" rel="stylesheet">
+    
+      
+      <!--tooltip css-->
+      <link href="assets/css/tooltip.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body class=" layout-fluid">
+      <div class="preloader">
+         <div class="sk-double-bounce">
+            <div class="sk-child sk-double-bounce1"></div>
+            <div class="sk-child sk-double-bounce2"></div>
+         </div>
+      </div>
+      <!-- Header Layout -->
+      <div class="mdk-header-layout js-mdk-header-layout">
+         <!-- Header -->
+         <div id="header" data-fixed class="mdk-header js-mdk-header mb-0">
+            <div class="mdk-header__content">
+               <!-- Navbar -->
+               <nav id="default-navbar" class="navbar navbar-expand navbar-light bg-white m-0">
+                  <div class="container-fluid ">
+                     <!-- Toggle sidebar -->
+                     <button class="navbar-toggler d-block" data-toggle="sidebar" type="button">
+                     <span class="fa fa-bars"></span>
+                     </button>
+                     <!-- Brand -->
+                     <a href="index.html" class="navbar-brand">
+                        <img src="assets/images/logo/logo.png" class="mr-2" alt="AspireBuzz" title="AspireBuzz - Learn To Achieve, Learn Through Us" />
+                        <span class="d-none d-xs-md-block head-adjust">
+                           <h3>Tutor Arena</h3>
+                        </span>
+                     </a>
+                     <div class="flex"></div>
+                     <!-- Menu -->
+                     <ul class="nav navbar-nav flex-nowrap">
+                        <!-- Notifications dropdown -->
+                        <li class="nav-item dropdown dropdown-notifications dropdown-menu-sm-full">
+                           <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown" data-dropdown-disable-document-scroll data-caret="false">
+                           <i class="fa fa-bell font-size-24pt"></i>
+                           <span class="badge badge-notifications badge-danger">2</span>
+                           </button>
+                           <div class="dropdown-menu dropdown-menu-right">
+                              <div data-perfect-scrollbar class="position-relative">
+                                 <div class="dropdown-header"><strong>Messages</strong></div>
+                                 <div class="list-group list-group-flush mb-0">
+                                    <a href="notifications.html" class="list-group-item list-group-item-action unread">
+                                    <span class="d-flex align-items-center mb-1">
+                                    <small class="text-muted">5 minutes ago</small>
+                                    <span class="ml-auto unread-indicator bg-primary"></span>
+                                    </span>
+                                    <span class="d-flex">
+                                    <span class="avatar avatar-xs mr-2">
+                                    <img src="assets/images/people/110/woman-5.jpg" alt="people" class="avatar-img rounded-circle">
+                                    </span>
+                                    <span class="flex d-flex flex-column">
+                                    <strong>Michelle</strong>
+                                    <span class="text-black-70">Clients loved the new design.</span>
+                                    </span>
+                                    </span>
+                                    </a>
+                                    <a href="notifications.html" class="list-group-item list-group-item-action unread">
+                                    <span class="d-flex align-items-center mb-1">
+                                    <small class="text-muted">5 minutes ago</small>
+                                    <span class="ml-auto unread-indicator bg-primary"></span>
+                                    </span>
+                                    <span class="d-flex">
+                                    <span class="avatar avatar-xs mr-2">
+                                    <img src="assets/images/people/110/woman-5.jpg" alt="people" class="avatar-img rounded-circle">
+                                    </span>
+                                    <span class="flex d-flex flex-column">
+                                    <strong>Michelle</strong>
+                                    <span class="text-black-70">Superb job..</span>
+                                    </span>
+                                    </span>
+                                    </a>
+                                 </div>
+                                 <div class="dropdown-header"><strong>System notifications</strong></div>
+                                 <div class="list-group list-group-flush mb-0">
+                                    <a href="notifications.html" class="list-group-item list-group-item-action border-left-3 border-left-danger">
+                                    <span class="d-flex align-items-center mb-1">
+                                    <small class="text-muted">3 minutes ago</small>
+                                    </span>
+                                    <span class="d-flex">
+                                    <span class="flex d-flex flex-column">
+                                    <span class="text-black-70">Your profile information has not been synced correctly.</span>
+                                    </span>
+                                    </span>
+                                    </a>
+                                    <a href="notifications.html" class="list-group-item list-group-item-action">
+                                    <span class="d-flex align-items-center mb-1">
+                                    <small class="text-muted">5 hours ago</small>
+                                    </span>
+                                    <span class="d-flex">
+                                    <span class="flex d-flex flex-column">
+                                    <strong>Adrian. D</strong>
+                                    <span class="text-black-70">Wants to join your private group.</span>
+                                    </span>
+                                    </span>
+                                    </a>
+                                    <a href="notifications.html" class="list-group-item list-group-item-action">
+                                    <span class="d-flex align-items-center mb-1">
+                                    <small class="text-muted">1 day ago</small>
+                                    </span>
+                                    <span class="d-flex">
+                                    <span class="flex d-flex flex-column">
+                                    <span class="text-black-70">Your deploy was successful.</span>
+                                    </span>
+                                    </span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <!-- // END Notifications dropdown -->
+                        <!-- User dropdown -->
+                        <li class="nav-item dropdown ml-1 ml-md-3">
+                           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"><img src="assets/images/people/50/guy-6.jpg" alt="Avatar" class="rounded-circle" width="40"></a>
+                           <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="account-settings.html">
+                              <i class="fa fa-edit fa-fw mr-1"></i>  Edit Account
+                              </a>
+                              <a class="dropdown-item" href="account-settings.html">
+                              <i class="fa fa-user fa-fw mr-1"></i>  Public Profile
+                              </a>
+                              <a class="dropdown-item" href="account-settings.html">
+                              <i class="fa fa-lock fa-fw mr-1"></i>  Logout
+                              </a>
+                           </div>
+                        </li>
+                        <!-- // END User dropdown -->
+                     </ul>
+                  </div>
+               </nav>
+               <!-- // END Navbar -->
+            </div>
+         </div>
+         <!-- // END Header -->
+         <!-- Header Layout Content -->
+         <div class="mdk-header-layout__content">
+            <div data-push data-responsive-width="992px" class="mdk-drawer-layout js-mdk-drawer-layout">
+               <div class="mdk-drawer-layout__content page ">
+                  <div class="container-fluid page__container">
+                     <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Account Settings</li>
+                        
+                     </ol>
+                     <div class="d-flex flex-column flex-sm-row flex-wrap mb-headings align-items-start align-items-sm-center">
+                        <div class="flex mb-2 mb-sm-0">
+                           <h3><b>Account Settings</b><a onmouseover="tooltip.pop(this, '#sub1', {position:1, offsetX:-20, effect:'slide'})"><i class="fa fa-question-circle ml-1 text-light-grey"></i></a></h3>
+
+                        </div>
+                         
+                        
+                        <a href="index.html" class="btn  btn-white btn-rounded"><i class=" sidebar-menu-icon--left fa fa-arrow-left"></i>  Back</a>
+                     </div>
+                     
+                     <div class="card p-24pt">
+                     
+                     <div class="col-lg-12">
+                     
+                     <button class="btn btn-primary caps" data-toggle="swal" data-swal-title="Good job!" data-swal-text="You clicked the button!" data-swal-type="success">
+                                    Success
+                                </button>
+                                
+                                
+                                <hr class="mt-24pt mb-24pt">
+                                
+                                <button class="btn btn-primary caps"  data-toggle="swal" data-swal-title="Are you sure?" data-swal-text="You will not be able to recover this imaginary file!" data-swal-type="warning" data-swal-show-cancel-button="true" data-swal-confirm-button-text="Yes, delete it!" data-swal-confirm-cb="#swal-confirm-delete" data-swal-close-on-confirm="false">
+                                    Conformation
+                                </button>
+                                
+                                
+                                <hr class="mt-24pt mb-24pt">
+                                
+                                <button class="btn btn-primary caps"  data-toggle="swal" data-swal-title="Are you sure?" data-swal-text="You will not be able to recover this imaginary file!" data-swal-type="warning" data-swal-confirm-button-text="Yes, delete it!" data-swal-confirm-cb="#swal-confirm-delete" data-swal-show-cancel-button="true" data-swal-cancel-button-text="No, cancel please!" data-swal-cancel-cb="#swal-cancel-delete" data-swal-close-on-confirm="false" data-swal-close-on-cancel="false">
+                                    Conformation & cancel
+                                </button>
+                                
+                                 <hr class="mt-24pt mb-24pt">
+                                
+                                
+                                <div class="alert alert-dismissible bg-success text-white border-0 fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <strong>Success - </strong> A simple success alert - check it out!
+                                </div>
+
+                                <div class="alert alert-dismissible bg-danger text-white border-0 fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <strong>Danger - </strong> A simple danger alert - check it out!
+                                </div>
+
+                                <div class="alert alert-dismissible bg-warning text-white border-0 fade show" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <strong>Warning - </strong> A simple warning alert - check it out!
+                                </div>
+                     
+                     </div>       
+                          
+                            
+                        </div>
+                     
+                      <div id="swal-confirm-delete" class="d-none" data-swal-type="success" data-swal-title="Deleted!" data-swal-text="Your imaginary file has been deleted."></div>
+
+                        <div id="swal-cancel-delete" class="d-none" data-swal-type="error" data-swal-title="Cancelled" data-swal-text="Your imaginary file is safe :)"></div>
+                     
+                     <div class="spacer"></div>
+                     <div class="spacer"></div>
+                  </div>
+               </div>
+               <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+                  <div class="mdk-drawer__content ">
+                     <div class="sidebar sidebar-left sidebar-light bg-white o-hidden" data-perfect-scrollbar>
+                        <div class="sidebar-p-y">
+                           <div class="sidebar-heading">NAVIGATION</div>
+                           <ul class="sidebar-menu sm-active-button-bg">
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="index.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-tachometer-alt fa-fw"></i>    Dashboard
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="test-packages.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-file-alt fa-fw"></i> Test Packages
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="learning-packages.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-graduation-cap fa-fw"></i> Learning Packages
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                               <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="courses.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-play-circle fa-fw"></i> Courses
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                                 </li>
+                                 <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="courses.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-rss fa-fw"></i> Live Classes
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="question-banks.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-question-circle fa-fw"></i> Question Banks
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="test-pattrens.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-file-invoice fa-fw"></i> Test Pattrens
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="library.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-book fa-fw"></i> Library
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="sales-reports.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-chart-bar fa-fw"></i> Sales Reports
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="student-reports.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-chart-pie fa-fw"></i> Student Reports
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="qa-foram.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-comment-dots fa-fw"></i> Q & A Foram
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button" href="sms-notifications.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-bell fa-fw"></i> SMS / Notifications
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item active">
+                                 <a class="sidebar-menu-button" href="account-settings.html">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-user-cog fa-fw"></i> Account Settings
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                              <li class="sidebar-menu-item">
+                                 <a class="sidebar-menu-button logout" href="#">
+                                 <i class="sidebar-menu-icon sidebar-menu-icon--left fa fa-sign-out-alt fa-fw"></i> Logout
+                                 <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--layout content-->
+      </div>
+      <div class="main-footer">
+         &copy; Copyright 2016-2019, AspireBuzz. Al Rights Reserved.
+      </div>
+      
+      
+   
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      <!--main footer-->
+      <!-- jQuery -->
+       <!-- jQuery -->
+   <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/dom-factory.js"></script>
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- App JS -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Highlight.js -->
+    <script src="assets/js/hljs.js"></script>
+
+  
+
+
+
+
+
+
+    <!-- Global Settings -->
+    <script src="assets/js/settings.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="assets/vendor/sweetalert.min.js"></script>
+    <script src="assets/js/sweetalert.js"></script>
+      
+   </body>
+</html>
