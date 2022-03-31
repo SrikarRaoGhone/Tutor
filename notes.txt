@@ -9,4 +9,13 @@ place holders added for uploaded files and videos
 app css need to overwrite
 
 
+modifications:
+
+place holders added for uploaded files and videos
+1. create-new-live-session.html
+
+
+app css need to overwrite
+
+
 
